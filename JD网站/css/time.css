@@ -1,0 +1,19 @@
+#back {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 444px;
+    top: 208px;
+    z-index: 999;
+}
+
+.date {
+    margin: 100px;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    font-size: 60px;
+    background-color: rgba(0,0,0,0.1);
+    position: relative;
+}
