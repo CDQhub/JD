@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .little div {
+            float: left;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+        }
+        .big {
+            height: 800px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <!-- type="text/javascript" src="./xxx.js" 另一种结合方式--> 
+    <!-- ==：比较值 ===：比较值和类型
+        js 定义数组
+        var arr = [1,"2",true];
+        var arr = new Array(8);
+        var arr = new Array(3, 5, 78);
+    -->
+    <!-- js 没有重载 -->
+
+    <script>
+        // 直接写入内容
+        document.write('aaaaaaaaa');;
+        document.write('<hr>')
+
+        document.write("<table>");
+        // 写入一个99乘法表
+        for(var i = 1; i <= 9; i++)
+        {
+            document.write("<tr>");      
+            for(var j = 1; j <= i; j++)
+            {
+                document.write("<td>");
+                document.write(j + "*" + i + "=" + i*j + "&nbsp");
+                document.write("</td>");
+            }
+            document.write("</tr>");      
+        }
+        document.write("</table>");
+        document.write('<hr>')
+    </script>
+
+    <div>hello</div>
+    <div id="box">world</div>
+    <div>cdq</div>
+
+    <form action="1.php">
+        <input type="text" name="name"><br>
+        <input type="text" class="fa" name="pwd"><br>
+        <input type="submit" value="登陆">
+    </form><hr>
+    <script>
+        // 根据id获取元素
+        var box = document.getElementById('box');
+        console.log(box);
+        // 根据标签名获取元素
+        var divs = document.getElementsByTagName('div');
+        // 根据属性获取元素
+        var inputs = document.getElementsByName('name');
+        // 根据类名获取元素
+        var vas = document.getElementsByClassName('fa');
+        // 选择器选择，返回第一个
+        var query = document.querySelector('input');
+        // 选择器选择，返回集合
+        var querys = document.querySelectorAll('input');
+    </script>
+
+    <!-- 事件 -->
+    <input type="button" value="check" id="ib"><br>
+    <script>
+        var bt = document.querySelector('#ib');
+        console.log(bt);
+        bt.onclick = function () {
+            // 匿名函数
+            // 事件三要素：事件源，事件动作，事件处理函数
+            alert('别点我');
+        }
+    </script><hr>
+    
+    <a href="http://www.baidu.com" id="link">超链接</a><br>
+    <script>
+        var link = document.getElementById('link');
+        console.log(link);
+        link.onclick = function () {
+            alert('hello');
+            return false;
+        }
+    </script><hr>
+
+    <!-- 按钮切换图片 -->
+    <br><br>
+    <input type="button" id="123" value="点击切换图片"><br>
+    <img src="../JD网站/images/duo.png" alt="图片">
+    <script>
+        var btn = document.getElementById('123');
+        var index = 1;
+        btn.onclick = function () {
+            var img = document.getElementsByTagName('img');
+            switch(index)
+            {
+                case 1: 
+                    img[0].src = '../JD网站/images/grid2.jpg';
+                    index = 2;
+                    break;
+                case 2:
+                    img[0].src = '../JD网站/images/duo.png';
+                    index = 1;
+                    break;
+                default: 
+                    break;
+            }
+        }
+    </script><hr>
+
+    <!-- 隐藏和显示 -->
+    <br><br>
+    <input type="button" id="hide" value="隐藏">
+    <div id="hidediv" style="background-color:red; width: 200px; height: 600px;"></div>
+    <script>
+        var hide = document.getElementById('hide');
+        var div = document.getElementById('hidediv');
+        var flag = 1;
+        hide.onclick = function ()
+        {
+            if(flag == 1)
+            {
+                flag = 2;
+                div.style.width = 0;
+                this.value = "显示";
+            }
+            else
+            {
+                flag = 1;
+                div.style.width = "200px";
+                thishide.value = "隐藏";
+
+            }
+        }
+    </script><hr>
+    
+    <!-- 相册 -->
+    <div class="little">
+        <div><a href="#"><img src="../JD网站/images/image1.jpg" alt=""></a></div>
+        <div><a href="#"><img src="../JD网站/images/image2.jpg" alt=""></a></div>
+        <div><a href="#"><img src="../JD网站/images/image3.jpg" alt=""></a></div>
+        <div><a href="#"><img src="../JD网站/images/image4.jpg" alt=""></a></div>
+    </div>
+    <div class="big">
+        <img src="../JD网站/images/image1.jpg" alt="">
+    </div>
+    <script>
+        var littles = document.getElementsByClassName('little');
+        console.log(littles);
+        var big = document.getElementsByClassName('big');
+        littles.children(0).onclick = function ()
+        {
+            big[0].src = "../JD网站/images/image1.jpg";
+            return false;
+        }
+        littles.children(1).onclick = function ()
+        {
+            big[0].src = "../JD网站/images/image2.jpg";
+            return false;
+        }
+        littles.children(2).onclick = function ()
+        {
+            big[0].src = "../JD网站/images/image3.jpg";
+            return false;
+        }
+        littles.children(3).onclick = function ()
+        {
+            big[0].src = "../JD网站/images/image4.jpg";
+            return false;
+        }
+    </script><hr>
+
+
+</body>
+</html>

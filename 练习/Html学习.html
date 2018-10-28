@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base target="_blank">
+    <title>Document</title>
+</head>
+
+<body id="start">
+    <h3>纳兰容若</h3>
+    <hr />
+    <h4>纳兰性德</h4>
+    <p> <strong>纳兰性德</strong> <em>（1655年1月19日—1685年7月1日）</em>，叶赫那拉氏，字容若，号楞伽山人，满洲正黄旗人，清朝初年词人，原名纳兰成德，一度因避讳太子保成而改名纳兰性德。大学士明珠长子，其母为英亲王阿济格第五女爱新觉罗氏。</p>
+    <p>纳兰性德自幼饱读诗书，文武兼修，十七岁入国子监，被祭酒徐元文赏识。十八岁考中举人，次年成为贡士。康熙十二年（1673年）因病错过殿试。康熙十五年（1676年）补殿试，考中第二甲第七名，赐进士出身。纳兰性德曾拜徐乾学为师。他于两年中主持编纂了一部儒学汇编——《通志堂经解》，深受康熙皇帝赏识，为今后发展奠定基础。</p>
+    <p>纳兰性德于康熙二十四年（1685年）五月三十日（1685年7月1日）溘然而逝，年仅三十岁（虚龄三十有一）。纳兰性德的词以“真”取胜，写景逼真传神，词风“清丽婉约，哀感顽艳，格高韵远，独具特色“。著有《通志堂集》、《侧帽集》、《饮水词》等。</p>
+
+    <h2>目录</h2>
+    <a href="#div">div</a>
+    <a href="#span">span</a>
+    <a href="#end">end</a>
+    <a href="#start">start</a>
+
+    <h3> div标签 </h3>
+    <div>李白</div>
+
+    <h3> span标签 </h3>>
+    <span>皇子</span>
+
+    <h3>下划线和删除线标签</h3>
+    优惠：<br>    
+    <s>1888</s> <del>888</del> 现价：
+    <br>
+    <ins>88</ins> <br>
+
+    <h3>属性</h3>
+    <p>水平线：长度600 颜色是红色</p>
+    <hr width="500" color="red"> <br>
+
+    <h3>图片标签</h3>
+    <img src="./1484630549315.png" /> 直接加载图片<br>
+    <img src="./14846305493151.png" alt="替换文本，图像没有加载时候出现" title="图片的标题"> 带有alt和title的图片 <br>
+    <img src="./1484630549315.png" width="400"> 改变大小的图片 <br>
+    <img src="./1484630549315.png" height="500" border="4"> 带有边框的图像 <br>
+
+    <h3>链接标签</h3>
+    <!-- target 三种-->
+    <a href="http://www.baidu.com">百度</a> 文字，target：self<br>
+    <a href="http://www.baidu.com" target="_blank"><img src="./1484630619321.png" alt="百度" height="200"></a> 图片，target：blank<br>
+    <a href="./Untitled-1 - 副本.html">内部链接</a> 本地文件<br>
+
+    <h3>base标签</h3>
+    在head里面写入&nbsp;&nbsp;&nbsp;&lt;base target="_blank"&gt;<br>
+    <br id="end">
+
+    <h3>列表标签</h3>
+    <ul>
+        <li>无序标签</li>
+        <li>白日依山尽</li>
+        <li>黄河入海流</li>
+        <li>欲穷千里目</li>
+        <li>更上一层楼</li>
+    </ul>
+    <ol>
+        <li>有序标签</li>
+        <li>白日依山尽</li>
+        <li>黄河入海流</li>
+        <li>欲穷千里目</li>
+        <li>更上一层楼</li>
+    </ol>
+    <dl>
+        <dt>北京</dt>
+        <dd>首都</dd>
+        <dd>工作城市</dd>
+        <dt>西安</dt>
+        <dd>省会</dd>
+        <dd>所在城市</dd>
+    </dl>
+
+    <h3>表格标签</h3>
+    <table width="250" height="300" border="3" cellspacing="10" cellpadding="20" align="center">
+        <caption>这是我的table</caption>
+        <thead>
+            <tr>
+                <th>书籍1</th>
+                <th>书籍2</th>
+                <th>书籍3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>家</td>
+                <td>春</td>
+                <td>秋</td>
+            </tr>
+            <tr>
+                <td>雷</td>
+                <td>雨</td>
+                <td>电</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>合并单元格</p>
+    <h3>表格标签</h3>
+    <table width="250" height="300" border="3" cellspacing="10" cellpadding="20" align="center">
+        <caption>这是我的table</caption>
+        <thead>
+            <tr>
+                <th>书籍1</th>
+                <th>书籍2</th>
+                <th>书籍3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>家</td>
+                <td>春</td>
+                <td rowspan="2">秋</td>
+            </tr>
+            <tr>
+                <td colspan="2">雷</td>
+            </tr>
+            <tr>
+                <td colspan="3">雨</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>表单input标签</h3>
+    <!-- type=text,password,radio -->
+    输入框：<input type="text" maxlength="5" value="用户名"><br>
+    密码框：<input type="password"><br>
+    单选框：<input type="radio" name="sex" checked="checked">男 <input type="radio" name="sex">女<br> <!-- 单选必须要是同一名字空间 -->
+    复选框：<input type="checkbox" name="sport">足球 <input type="checkbox" name="sport">篮球 <input type="checkbox" name="sport">乒乓球<br>
+    <!-- type button -->
+    普通按钮：<input type="button" value="普通按钮"><br>
+    提交按钮：<input type="submit" value="提交按钮"><br>
+    重置按钮：<input type="reset" value="重置按钮"><br>
+    图像按钮：<input type="image" src="./1484630619321.png" height="500"><br>
+    文件按钮：<input type="file">
+
+    <h3>label标签</h3>
+    <!--第一种情况--><label> 输入账号：<input type="text" name="id"></label><br>
+    <!--第二种情况--><label for="2"> 输入账号：<input type="text" name="id"><input type="text" name="id" id="2"></label><br>
+
+    <h3>文本框</h3>
+    <textarea name="" id="" cols="100" rows="10">文本域</textarea><br>
+
+    <h3>下拉菜单</h3>
+    <select name="籍贯" id="">
+        <option>北京</option>
+        <option>上海</option>
+        <option selected="selected">渭南</option>
+    </select>
+
+    <h3>form标签</h3>
+    <form action="" method="post" name="form提交">
+            <!-- type=text,password,radio -->
+    输入框：<input type="text" maxlength="5" value="用户名"><br>
+    密码框：<input type="password"><br>
+    单选框：<input type="radio" name="sex" checked="checked">男 <input type="radio" name="sex">女<br> <!-- 单选必须要是同一名字空间 -->
+    复选框：<input type="checkbox" name="sport">足球 <input type="checkbox" name="sport">篮球 <input type="checkbox" name="sport">乒乓球<br>
+    <!-- type button -->
+    普通按钮：<input type="button" value="普通按钮"><br>
+    提交按钮：<input type="submit" value="提交按钮"><br>
+    重置按钮：<input type="reset" value="重置按钮"><br>
+    图像按钮：<input type="image" src="./1484630619321.png" height="500"><br>
+    文件按钮：<input type="file">
+    </form>
+
+    <h3> h5新增标签 </h3>
+    <header>header标签 头部、页眉部分</header><br>
+    <nav>nav标签 定义导航栏</nav>
+    <footer>footer标签 页脚部分</footer>
+    <article>article 文章标签</article>
+    <aside>aside标签 侧边栏</aside>
+
+    <input type="text" value="输入明星" list="star"> <!-- input 里面使用list-->
+    <datalist type="text" id="star"> <!--datalist里面使用id-->
+        <option>刘德华</option>
+        <option>刘若英</option>
+        <option>刘能</option>
+        <option>郭富城</option>
+        <option>张学友</option>
+    </datalist>
+    <fieldset>
+        <legend>用户登录</legend>
+        用户名：<input type="text" value="name" list="star"><br>
+        密&nbsp;&nbsp;&nbsp;码：<input type="password"><br>
+    </fieldset>
+
+    <h3>h5新增属性</h3>
+    <form action="">
+        邮箱：<input type="email" name="" id=""><br>
+        手机：<input type="tel" name="" id=""><br>
+        数字：<input type="number" name="" id=""><br>
+        url：<input type="url" name="" id=""><br>
+        搜索：<input type="search" name="" id=""><br>
+        区域：<input type="range" name="" id=""><br>
+        时间：<input type="time" name="" id=""><br>
+        年月日：<input type="date" name="" id=""><br>
+        月份：<input type="month" name="" id=""><br>
+        星期：<input type="week" name="" id=""><br>
+        颜色：<input type="color" name="" id=""><br>
+        <input type="submit" value="提交">
+    </form>
+    placeholder：<input type="text" placeholder="请输入"><br>
+    autofocus：<input type="email" name="" id="" autofocus="autofocus"><br>
+    multiple：<input type="file" name="" id="" multiple="multiple"><br>
+    required：<input type="text" name="" id="" required><br>
+    accesskey：<input type="text" name="" id="" accesskey="s"><br>
+
+    <h3>自动记录完成</h3>
+    <!--1.提交按钮  2.必须有一个name值-->
+    <form action="">
+        autocomplete：<input type="text" autocomplete="on" name="auto">
+        <input type="submit" value="提交">
+    </form>
+
+    <h3>多媒体标签</h3>
+    embed:<embed src="blob:https://www.bilibili.com/7dfd19bb-7e81-4caa-b856-eb05d6c3663c" type="flash"></embed><br>
+    audio:<audio controls autoplay loop="-1" src="i://CloudMusic//Aimer - カタオモイ.mp3"></audio><br>
+    为了支持浏览器准备三种格式的音频（ogg，MP3，wav）：<audio  controls autoplay>
+        <source src="i:/CloudMusic/A Little Story - Valentin.mp3">
+        <source src="i:/CloudMusic/A Rainy Morning ~Main Title~ - Kashiwa Daisuke.mp3">
+        <source src="i:/CloudMusic/A Step You Can’t Take Back - Keira Knightley.mp3">
+        您的浏览器不支持
+    </audio><br>
+    vidio:<video width="800" height="600" controls src="g:/电影/人生密密缝.mp4"></video><br>
+</body>
+</html>

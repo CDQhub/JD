@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <style>
+        .nalan {
+            color:darkslateblue;
+        }
+        h3 {
+            color: rgba(255,0,0,0.8);
+            font-family: "微软雅黑";
+            font-weight: 200;
+            font-style: italic;
+        }
+        h4 {
+            /* style，weight，size，family */
+            font: italic bold 18px "microsoft yahei";
+        }
+        p {
+            font-size: 20px; 
+            color:orange;   /*这是橙色*/
+            line-height: 26px;  /* 行间距 */
+            text-align: left; /* 对齐方式 */
+            text-indent: 2em; /* 首行缩进 */
+            letter-spacing: 2px; /* 字间距 */
+            word-spacing: 10px; /* 词间距 */
+        }
+        hr {
+            color: red;
+        }
+        strong {
+            font-weight: 400;
+        }
+
+        .blue{
+            color: blue;
+        }
+        .orange{
+            color: orange;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        span{
+            font-size: 40px;
+        }
+
+        .font-20{
+            font-size: 20px;
+        }
+
+        #pink{
+            color: pink;
+        }
+
+        /* 代表所有的选择器 */
+        *{
+            font-size:20px;
+        }
+
+        /* 伪类选择器 */
+        /* 链接伪类选择器 */
+        /* 未访问 */
+        a:link{
+            color: grey;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        /* 已访问 */
+        a:visited{
+            color: orange;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        /* 鼠标经过 */
+        a:hover{
+            color: red;
+        }
+        /* 选定的链接 */
+        a:active{
+            color: green;
+        }
+
+        /* 位置伪类选择器 */
+        /* li:nth-child(n) */
+        li:nth-child(odd){
+            color: brown;
+        }
+        li:nth-child(even){
+            color: deeppink;
+        }
+        li:first-child{
+            color: red;
+            font-size: 18px;
+        }
+        li:last-child{
+            color: green;
+            font-size: 18px;
+        }
+
+        .shadow:hover{
+            font-size: 100px;
+            /* 水平距离 垂直距离 模糊距离 颜色 */
+            text-shadow: 3px 6px 10px rgba(0,0,0,0.4);
+        }
+
+        div{
+            color: pink;
+        }
+
+        .blocktoline{
+            display: inline;
+        }
+        .linetoblock{
+            display: block;
+        }
+
+        /* 交集选择器 */
+        div.red{
+            font-size: 20px;
+        }
+        /* 并集选择器 */
+        div, p, span{
+            color: red;
+        }
+        /* 后代选择器 */
+        div p {
+            color: brown;
+        }
+        /* 子元素选择器 */
+        ul > li {
+            color: aqua;
+        }
+        /* 属性选择器 */
+        a[title] {
+            color: olive;
+        }
+        a[class^=font] { /* 以font开始 */
+            color: khaki;
+        }
+        a[class$=font] { /* 以font结尾 */
+            color: salmon;
+        }
+        a[class*=font] { /* 带有font */
+            color: gold;
+        }
+        /* 伪元素选择器 */
+        ::first-letter {
+            color: darkblue;
+        }
+        ::first-line {
+            color: darkolivegreen;
+        }
+        ::before {
+            color: teal;
+            content: "before";
+        }
+        ::after {
+            content: "after"
+        }
+    </style>
+</head>
+<body>
+    <h3 class="nalan">纳兰容若</h3>
+    <hr />
+    <h4>纳兰性德</h4>
+    <p> <strong>纳兰性德</strong> <em>（1655年1月19日—1685年7月1日）</em>，叶赫那拉氏，字容若，号楞伽山人，满洲正黄旗人，清朝初年词人，原名纳兰成德，一度因避讳太子保成而改名纳兰性德。大学士明珠长子，其母为英亲王阿济格第五女爱新觉罗氏。</p>
+    <p>纳兰性德自幼饱读诗书，文武兼修，十七岁入国子监，被祭酒徐元文赏识。十八岁考中举人，次年成为贡士。康熙十二年（1673年）因病错过殿试。康熙十五年（1676年）补殿试，考中第二甲第七名，赐进士出身。纳兰性德曾拜徐乾学为师。他于两年中主持编纂了一部儒学汇编——《通志堂经解》，深受康熙皇帝赏识，为今后发展奠定基础。</p>
+    <p>纳兰性德于康熙二十四年（1685年）五月三十日（1685年7月1日）溘然而逝，年仅三十岁（虚龄三十有一）。纳兰性德的词以“真”取胜，写景逼真传神，词风“清丽婉约，哀感顽艳，格高韵远，独具特色“。著有《通志堂集》、《侧帽集》、《饮水词》等。</p>
+    <hr color="red">
+
+    <hr color="red">
+    <h3>Google案例</h3>
+    <span class="blue">G</span>
+    <span class="red">o</span>
+    <span class="orange">o</span>
+    <span class="blue">g</span>
+    <span class="green">l</span>
+    <span class="red">e</span>
+
+    <hr>
+    <h3>双类名</h3>
+    <div class="font-20 red">亚瑟</div>
+    <div class="font-20 green">张飞</div>
+    <div class="font-20 orange">刘备</div>
+    <div class="font-20 blue">关羽</div>
+
+    <hr />
+    <h3>id选择器</h3>    
+    <div id="pink">李四</div>  <!-- id只能使用一次 -->
+    
+    <hr>
+    <h3>伪类选择器</h3>
+    <fieldset>
+        <legend>链接伪类选择器</legend>
+        <div> <a href="#">秒杀</a> </div>
+        <div> <a href="#">秒杀</a> </div>
+        <div> <a href="#">秒杀</a> </div>
+    </fieldset>
+
+    <hr>
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+    </ul>    
+
+    <h3>文字阴影</h3>
+    <span class="shadow">我是阴影</span>
+    <hr>
+
+    <h3>样式表</h3>
+    <div>内部样式表</div>
+    <div style="color:orange;">行内样式表</div>
+    <hr>
+
+    <h3>样式转换</h3>
+    <div class="blocktoline">123</div>
+    <div class="blocktoline">456</div>
+    <div class="blocktoline">789</div>
+    <span class="linetoblock">123</span>
+    <span class="linetoblock">456</span>
+    <span class="linetoblock">789</span>
+    <hr>
+
+    <h3>交集选择器</h3>
+    <div class=".red">曹大千</div>
+    <h3>后代选择器</h3>
+    <div>
+        <p>曹大千</p>
+    </div>
+    <h3>子元素选择器</h3>
+    <ul>
+        <li>一级菜单
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+        <li>一级菜单
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>属性选择器</h3>
+    <a href="#" title="百度">百度</a>
+    <a href="#" title="sina">新浪</a>
+    <a href="#">搜狐</a>
+</body>
+</html>

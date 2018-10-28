@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 背景 */
+        body {
+            background-color: #ccc; /* 背景颜色 */
+            background-image: url(1484630619321.png); /* 背景图片 可以设置多个背景图前面的会盖在后一个上*/
+            background-repeat: no-repeat; /* 是否平铺 repeat-x, repeat-y */
+            /* background-position: right bottom; 利用方位名词，默认 left，top bottom center */
+            /* background-position: 10 30; */
+            background-position: center top; /* 位置 */
+            background-attachment: fixed; /* 图片是否滚动 scroll滚动 fixed固定*/
+            /* background: 背景颜色 背景图片 背景是否平铺 背景是否滚动 位置 */
+
+            /* 背景缩放 */
+            background-size: 100px; /* 宽度 高度（建议只改一个值，另一个会等比例缩放）/ 可以用百分比，例如20% / cover拉伸 / contain等比例缩放*/
+
+        }
+        /* 背景半透明 */
+        p {
+            width: 4em;
+            background-color: rgba(255, 255, 255, 0.438);
+        }
+        
+        /* 文字阴影 */
+        div {
+                font: 700 80px "微软雅黑";
+                color: #ccc;
+        }
+        div:first-child {
+            text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+        }
+        div:last-child {
+            text-shadow: 1px 1px 1px #fff, -1px -1px 1px #000;
+        }
+
+        .linetoblock {
+            display: inline-block;
+        }
+        a {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        a:hover {
+            background: orange;    
+        }
+
+        /* 边框 */
+        .user {
+            border-bottom: 5px red dashed;
+            border-left: 5px pink solid; 
+            color: red;   
+        }
+
+        /* 圆角矩形 */
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+        }
+        div:first-child {
+            border-radius: 10px;
+        }
+        div:nth-child(2) {
+            border-radius: 100px; /* 取高度和宽度的一半，刚好能够变成一个圆 */
+        }
+        div:nth-child(3) {
+            border-radius: 50%; /* 取高度和宽度的一半，刚好能够变成一个圆 */
+        }
+        div:nth-child(4) {
+            border-radius: 10px 40px; /* 左上角和右下角10px，右上角和左下角40px */
+        }
+        div:nth-child(4) {
+            border-radius: 10px 40px 80px; /* 左上角10px，右上角和左下角40px，右下角80px */
+        }
+        div:nth-child(5) {
+            border-radius: 10px 40px 80px 100px; /* 顺时针设置角度像素 */
+        }
+        div:nth-child(6) {
+            border-radius: 100px; /* 胶囊 */
+            height: 100px;
+        }
+        div:nth-child(7) {
+            border-radius: 100px 0px; /* 柠檬 */
+        }
+
+        /* 内边距 */
+        div {
+            /* padding-left: 20px; */
+            /* padding: 20px;如果只写一个的话上下左右都是20px  */
+            /* padding: 10px 30px; 上下10px 左右30px */
+            /* padding: 10px 30px 50px; 上10px 左右30px 下50px */
+            padding: 10px 30px 50px 70px; /* 上右下左顺时针的边距 */
+        }
+
+        /* 外边距 */
+        .margi {
+            /* margin: 200px 300px;  */
+            margin: 50px auto /* 上下30 左右自动这样会居中 */
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 外边界合并 */
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* border: 1px solid red; */
+            /* padding: 0; */
+            overflow: hidden;
+        }
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+<body>
+        <p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p><p>gogogogo</p>
+
+        <fieldset>
+            <div>凸起文字</div> 
+            <legend>文字阴影</legend> <!-- 为了使用firstchild 和 lastchild 伪类选择器-->
+            <div>凹下文字</div> 
+        </fieldset>
+
+        <fieldset>
+            <legend>模拟训练</legend>
+            <a href="#" class="linetoblock">专区说明</a>
+            <a href="#" class="linetoblock">申请资格</a>
+            <a href="#" class="linetoblock">兑换奖励</a>
+            <a href="#" class="linetoblock">下载游戏</a>
+        </fieldset>
+
+        <fieldset>
+            <legend>边框</legend>
+            用户名：<input type="text" class="user" name="user" id=""><br>
+            密码：<input type="password" name="pw" id=""><br>
+            输入：<input type="text" name="" id=""><br>
+        </fieldset>
+
+        <!-- 圆角矩形 -->
+        <fieldset>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <legend>圆角矩形</legend>
+        </fieldset>
+
+        <!-- 内边距 -->
+        <fieldset>
+                <div>边距问题</div>
+                <legend>内边距</legend>
+        </fieldset>
+        <!-- 外边距 -->
+        <fieldset>
+                <div class="margi">边距问题</div>
+                <legend>外边距</legend>
+        </fieldset><br><br>
+        <section>
+            外边界合并
+            <div class="father">
+                <div class="child"></div>
+            </div>
+        </section>
+</body>
+</html>
